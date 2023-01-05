@@ -1,0 +1,7 @@
+---
+apiVersion: v2
+name: ${{values.component_id}}
+version: 0.0.1
+appVersion: "0.1"
+description: Application used to test frontdoor routing capabilities
+

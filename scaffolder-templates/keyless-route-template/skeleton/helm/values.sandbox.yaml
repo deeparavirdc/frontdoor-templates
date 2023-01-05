@@ -1,0 +1,4 @@
+environment: sandbox
+podAnnotations:
+  splunk.skyway.rdc/index: skyway
+  splunk.skyway.rdc/sourcetype: ${{values.component_id}}-sandbox
