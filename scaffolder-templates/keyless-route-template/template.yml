@@ -56,7 +56,10 @@ spec:
         dryRun:
           title: Only perform a dry run, don't publish anything
           type: boolean
-          default: false      
+          default: false
+          ui:autofocus: true
+          ui:options:
+            rows: 5                
         repoUrl:
           title: Repository Location
           type: string
