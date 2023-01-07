@@ -1,4 +1,3 @@
-{%- if values.keyless %}
 apiVersion: tyk.tyk.io/v1alpha1
 kind: ApiDefinition
 metadata:
@@ -12,5 +11,3 @@ spec:
     target_url: ${{values.target_url}}
     listen_path: /${{values.component_id}}/
     strip_listen_path: true
-   
-{%- endif %}    
