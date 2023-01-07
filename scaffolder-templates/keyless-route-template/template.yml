@@ -85,12 +85,12 @@ spec:
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           http_port: 8080
     
-    - name: Delete files if not keyless
-      if: ${{ parameters.keyless !== true }}
-      action: fs:delete
-      input:
-        files:
-          - ${{values.component_id}}.keyless.apidef.yaml       
+    # - name: Delete files if not keyless
+    #   if: ${{ parameters.keyless !== true }}
+    #   action: fs:delete
+    #   input:
+    #     files:
+    #       - ${{values.component_id}}.keyless.apidef.yaml       
 
     - id: publish
       if: ${{ parameters.dryRun !== true }}
