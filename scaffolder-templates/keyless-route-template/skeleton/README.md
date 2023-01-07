@@ -2,6 +2,10 @@
 
 ${{values.description}}
 
+{%- if values.setup_keyless_api_route %}
+Setting up a Keyless API route
+{%- endif %}
+
 ## Deploying your API endpoint - Next Steps
 
 Define the following argo application for this repository in `eks-cluster-automation`.

@@ -32,6 +32,10 @@ spec:
           title: Description
           type: string
           description: Help others understand what this website is for.
+        setup_keyless_api_route:
+          title: Setup Keyless API route
+          type: boolean
+          default: false          
         owner:
           title: Owner
           type: string
