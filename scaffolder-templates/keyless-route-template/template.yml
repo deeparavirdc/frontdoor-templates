@@ -32,10 +32,14 @@ spec:
           title: Description
           type: string
           description: Help others understand what this website is for.
-        setup_keyless_api_route:
-          title: Setup Keyless API route
+        keyless:
+          title: Setup Keyless API definition
           type: boolean
-          default: false          
+          description: Select to setup keyless API definition
+          default: false
+          ui:autofocus: true
+          ui:options:
+            rows: 5        
         owner:
           title: Owner
           type: string
