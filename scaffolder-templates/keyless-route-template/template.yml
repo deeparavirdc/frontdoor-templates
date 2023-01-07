@@ -95,6 +95,7 @@ spec:
         repoUrl: ${{ parameters.repoUrl }}
 
     - id: register
+      if: ${{ parameters.dryRun !== true }}
       name: Register
       action: catalog:register
       input:
