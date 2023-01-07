@@ -2,7 +2,7 @@
 
 ${{values.description}}
 
-{%- if values.setup_keyless_api_route %}
+{%- if values.keyless %}
 Setting up a Keyless API route
 {%- endif %}
 
